@@ -2,11 +2,7 @@ import express from "express";
 import jwt from "jsonwebtoken";
 import redis from "redis";
 
-import {
-  fetchPlayersForTeam,
-  leaguesList,
-  optionsData
-} from "npm-football-data";
+import { fetchPlayersForTeam } from "npm-football-data";
 
 import Player from "npm-football-data/dist/lib/models/player.model";
 
@@ -14,8 +10,6 @@ const REDIS_PORT = 6379;
 const secretKey = "REDIS UUID";
 
 const router = express.Router();
-
-optionsData.league = leaguesList.Italy.SERIEA;
 
 router.get("/players/:team", async (req, res, next) => {
   const { team } = req.params;

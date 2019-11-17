@@ -1,0 +1,11 @@
+.list-group-leagues {
+  max-width: 20rem;
+  margin: 2rem auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+h2 {
+  margin: 0 auto;
+  text-align: center;
+}

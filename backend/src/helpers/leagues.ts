@@ -14,7 +14,6 @@ export const findLeague = (league: string) => {
       return leaguesList[nation][league];
     }
   }
-
   return undefined;
 };
 

@@ -1,0 +1,4 @@
+<h2>Leagues</h2>
+<ul class="list-group list-group-leagues">
+  <li *ngFor="let league of leagues" class="list-group-item" (click)="onSelectTeam(league)">{{ league }}</li>
+</ul>
